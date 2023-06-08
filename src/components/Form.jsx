@@ -38,8 +38,8 @@ function Form() {
 
   return (
     <div className="container mx-auto h-screen grid place-content-center ">
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="relative z-0 w-96 mb-6 group">
+      <form className="w-64" onSubmit={handleSubmit(onSubmit)}>
+        <div className="relative z-0 w-full mb-6 group ">
           <input
             {...register("firstName")}
             // aria-invalid={errors.firstName ? "true" : "false"}
