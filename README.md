@@ -23,7 +23,9 @@ This project is a form validation application built using Next.js, React Hook Fo
 [![Github Badge](https://img.shields.io/badge/-Github-000?style=quare&labelColor=000&logo=Github&logoColor=white&link=link)](https://github.com/medetcandiler)
 
 ---
-##How the project looks like ?
+## Live Link
+https://form-validation-app-chi.vercel.app/
+## How does the project look?
 
 ![sample-of-my-project](./src/assets/Screen%20Shot%202023-06-08%20at%2021.43.35.png)
 
