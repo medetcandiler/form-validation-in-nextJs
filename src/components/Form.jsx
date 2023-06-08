@@ -4,20 +4,22 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { FaExclamationTriangle } from "react-icons/fa";
 
-
 const userSchema = yup
   .object({
-    firstName: yup.string().required('Please provide your first name'),
-    lastName: yup.string().required('Please provide your last name'),
-    mail: yup.string().email("must be valid email").required('Please provide your mail adress'),
+    firstName: yup.string().required("Please provide your first name"),
+    lastName: yup.string().required("Please provide your last name"),
+    mail: yup
+      .string()
+      .email("must be valid email")
+      .required("Please provide your mail adress"),
     phone: yup
       .string()
       .matches(
         /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
         "Enter a valid phone number"
       )
-      .required('Please provide your phone number'),
-    adress: yup.string().required('Please provide your adress'),
+      .required("Please provide your phone number"),
+    adress: yup.string().required("Please provide your adress"),
   })
   .required();
 
@@ -41,6 +43,7 @@ function Form() {
       <form className="w-64" onSubmit={handleSubmit(onSubmit)}>
         <div className="relative z-0 w-full mb-6 group ">
           <input
+            autoComplete="off"
             {...register("firstName")}
             // aria-invalid={errors.firstName ? "true" : "false"}
             className="block py-2.5 px-0 w-full text-sm text-gray-100 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-600 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -54,12 +57,14 @@ function Form() {
           )} */}
           {errors.firstName?.message && (
             <div className="flex items-center justify-center gap-2 text-sm text-red-500 mt-1">
-              {<FaExclamationTriangle />}{errors.firstName?.message}
+              {<FaExclamationTriangle />}
+              {errors.firstName?.message}
             </div>
           )}
         </div>
         <div className="relative z-0 w-full mb-6 group">
           <input
+            autoComplete="off"
             {...register("lastName")}
             className="block py-2.5 px-0 w-full text-sm text-gray-100 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-600 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
@@ -72,12 +77,14 @@ function Form() {
           )} */}
           {errors.lastName?.message && (
             <div className="flex items-center justify-center gap-2 text-sm text-red-500 mt-1">
-              {<FaExclamationTriangle />}{errors.lastName?.message}
+              {<FaExclamationTriangle />}
+              {errors.lastName?.message}
             </div>
           )}
         </div>
         <div className="relative z-0 w-full mb-6 group">
           <input
+            autoComplete="off"
             {...register("mail")}
             className="block py-2.5 px-0 w-full text-sm text-gray-100 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-600 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
@@ -90,12 +97,14 @@ function Form() {
           )} */}
           {errors.mail?.message && (
             <div className="flex items-center justify-center gap-2 text-sm text-red-500 mt-1">
-              {<FaExclamationTriangle />}{errors.mail?.message}
+              {<FaExclamationTriangle />}
+              {errors.mail?.message}
             </div>
           )}
         </div>
         <div className="relative z-0 w-full mb-6 group">
           <input
+            autoComplete="off"
             {...register("phone")}
             className="block py-2.5 px-0 w-full text-sm text-gray-100 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-600 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
@@ -110,12 +119,14 @@ function Form() {
           )} */}
           {errors.phone?.message && (
             <div className="flex items-center justify-center gap-2 text-sm text-red-500 mt-1">
-              {<FaExclamationTriangle />}{errors.phone?.message}
+              {<FaExclamationTriangle />}
+              {errors.phone?.message}
             </div>
           )}
         </div>
         <div className="relative z-0 w-full mb-6 group">
           <input
+            autoComplete="off"
             {...register("adress")}
             className="block py-2.5 px-0 w-full text-sm text-gray-100 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-600 dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder=" "
@@ -128,7 +139,8 @@ function Form() {
           )} */}
           {errors.adress?.message && (
             <div className="flex items-center justify-center gap-2 text-sm text-red-500 mt-1">
-              {<FaExclamationTriangle />}{errors.adress?.message}
+              {<FaExclamationTriangle />}
+              {errors.adress?.message}
             </div>
           )}
         </div>
