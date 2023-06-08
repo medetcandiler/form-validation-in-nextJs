@@ -32,7 +32,11 @@ https://form-validation-app-chi.vercel.app/
 
 
 ## ABOUT ME 
-Hello. Let me briefly introduce myself to you. First of all I am so glad to see that you are looking at my project. I am 26 years old. I am a mechanical engineer. After my graduation I worked as an engineer in the field somewhere in the region of 5 months. However, after working a few month I felt like it was not for me and I was not happy. After That I decided to research on different careers specifically those that include web development, because I have always been interested in coding, software, computer and its components. After extensive research, I grew more interest towards coding and I felt driven and motivated to become a genuinely brilliant frontend web developer. I would like to add that my education background that engineering has taught me how to work in an higly orginised and systematic way which allows me to learn in an effective way. What I mean is my enginnering background has been making great contrubutions to my learning process. I hope I did not bore you with my brief introduction.
+I am delighted that you have taken an interest in my project. At 26 years old, I hold a degree in mechanical engineering. Following graduation, I spent approximately five months working as an engineer in a specific field. However, during this time, I realized that the role did not align with my aspirations and overall satisfaction.
+
+Driven by my passion for coding, software, and computer components, I extensively researched various career options, ultimately gravitating towards web development. The more I delved into this field, the stronger my interest grew. I became determined to excel as a talented frontend web developer. Notably, my engineering background has equipped me with highly organized and systematic work habits, facilitating effective learning and contributing significantly to my educational journey.
+
+I hope this brief introduction has provided you with insight into my background and motivations without becoming overly tedious.
 
 ## Prepared by
 **Medetcan Diler**
